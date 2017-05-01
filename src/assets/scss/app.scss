@@ -50,6 +50,77 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
+
+.clear{
+  clear: both;
+}
+.rounded{
+  border-radius: 15px;
+}
+.box{
+  padding: 30px;
+  margin: 0 0 25px 0;
+}
+.white{
+  background-color: $white;
+  color: $dark;
+  border: 1px solid $light-gray;
+}
+.blue{
+  background-color: $blue;
+  color: $white;
+  select{
+    background: $light-gray url("../img/icon-select.png") no-repeat 95% 50%;
+    color: $white;
+    border: none;
+    &:focus{
+      outline: none;
+    }
+  }
+  input[type="submit"]{
+    border: none;
+    width: 100%;
+    text-align: left;
+    color: $white;
+    padding: 10px;
+    background: $black url("../img/icon-right.png") no-repeat 95% 50%;
+  }
+}
+.lightblue{
+  background-color: $lightblue;
+  color: $black;
+  h3{
+    color: $blue;
+  }
+}
+.lighterblue{
+  background-color: $lighterblue;
+  color: $dark;
+  h3{
+    color: $blue;
+  }
+}
+.dark{
+  background-color: $dark;
+  color: $white;
+  select{
+    background: $darker-grey url("../img/icon-select.png") no-repeat 95% 50%;
+    color: $white;
+    border: none;
+    &:focus{
+      outline: none;
+    }
+  }
+  input[type="submit"]{
+    border: none;
+    width: 100%;
+    text-align: left;
+    color: $white;
+    padding: 10px;
+    background: $blue url("../img/icon-right.png") no-repeat 95% 50%;
+  }
+}
+
 #header{
   background: #1d1d1d;
 }
@@ -61,21 +132,31 @@
   margin: 25px 0;
   background-size: cover;
 }
+#menu ul{
+  li{
+    display: inline-block;
+    a{
+      color: $white;
+      display: block;
+      height: 50px;
+    }
+  }
+}
 #header2{
   background: #0093d0;
   height: 100px;
-  #auto_header{
-    display: block;
-    background: url('../img/auto_header.png');
-    background-size: cover;
-    width: 169px;
-    height: 100px;
-    float: right;
-    margin: 10px 0;
-    @include breakpoint(medium up) {
-      width: 490px;
+  #autobar{
+    #auto_header{
+      background: url('../img/auto_header.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: right;
       height: 290px;
+      margin: 10px 0;
     }
+  }
+  #zoekbar{
+    margin-top: 50px;
   }
   @include breakpoint(medium up) {
     height: 245px;

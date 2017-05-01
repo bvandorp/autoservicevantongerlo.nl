@@ -43,6 +43,9 @@
 
 @import 'util/util';
 
+// 38. Google Fonts
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
 // 1. Global
 // ---------
 
@@ -50,7 +53,7 @@ $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: #1779ba,
+  primary: #0093d0,
   secondary: #767676,
   success: #3adb76,
   warning: #ffae00,
@@ -59,11 +62,16 @@ $foundation-palette: (
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
+$darker-grey: #333333;
 $black: #0a0a0a;
+$blue: #0093d0;
+$lightblue: #cce9f6;
+$lighterblue: #ecf6fa;
+$dark: #1d1d1d;
 $white: #fefefe;
 $body-background: $white;
 $body-font-color: $black;
-$body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$body-font-family: 'PT Sans', Arial, sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -121,11 +129,11 @@ $header-styles: (
     'h6': ('font-size': 16),
   ),
   medium: (
-    'h1': ('font-size': 48),
-    'h2': ('font-size': 40),
-    'h3': ('font-size': 31),
-    'h4': ('font-size': 25),
-    'h5': ('font-size': 20),
+    'h1': ('font-size': 41),
+    'h2': ('font-size': 33),
+    'h3': ('font-size': 24),
+    'h4': ('font-size': 18),
+    'h5': ('font-size': 17),
     'h6': ('font-size': 16),
   ),
 );
