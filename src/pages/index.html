@@ -1,60 +1,52 @@
 <div id="header">
-  <div class="row">
-    <div class="large-4 columns">
-      <a href="/" class="logo"></a>
-    </div>
-    <div id="menu" class="large-8 columns">
-      <ul class="dropdown menu" data-dropdown-menu>
-        <li><a href="#">Menu 1</a>
-          <ul class="menu">
-            <li><a href="#">Item 1A</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Menu die wat langer is 2</a></li>
-        <li><a href="#">Menu 3</a></li>
-        <li><a href="#">Menu 4</a></li>
-      </ul>
-    </div>
+  <div class="title-bar" data-responsive-toggle="menu" data-hide-for="medium">
+  		<button class="menu-icon" type="button" data-toggle></button>
+      <div class="icons">
+        <a href="tel:0031654314410"><i class="fi-telephone"></i></a>
+      </div>
+  </div>
+
+  <div class="top-bar" id="menu">
+  				<ul class=" medium-horizontal vertical dropdown menu" data-responsive-menu="accordion medium-dropdown">
+            <li><a href="/" class="logo"></a></li>
+              <li><a href="#">Occasions</a></li>
+  						<li><a href="#">Onderhoud</a></li>
+  						<li><a href="#">Financieringen</a></li>
+              <li><a href="#">Over ons</a></li>
+              <li><a href="#">Contact</a></li>
+  				</ul>
   </div>
 </div>
 
 <div id="header2">
   <div class="row">
-    <div id="zoekbar" class="large-3 columns dark rounded box">
-      <h3>Occasions</h3>
-      <form>
-        <select name="merk">
-          <option value="">Merk</option>
-        </select>
-        <select name="brandstof">
-          <option value="">Brandstof</option>
-        </select>
-        <select name="transmissie">
-          <option value="">Transmissie</option>
-        </select>
-        <select name="kleur">
-          <option value="">Kleur</option>
-        </select>
-        <input type="submit" value="Zoeken" />
-      </form>
-    </div>
-    <div id="autobar" class="large-9 columns">
+    <div id="autobar" class="large-12 columns">
       <div class="row">
-          <div id="auto_header" class="large-12 columns"></div>
+          <div id="auto_header" class="hide-for-small-only small-4 medium-7 large-8 columns"></div>
+          <div class="hide-for-small-only medium-5 large-4 columns box">
+            <h3>Autoservice van Tongerlo</h3>
+            Noorderweg 9a<br/>
+            1757 PC Oudesluis<br/>
+            T . +31 (0) 224 22 34 40<br/>
+            M. +31 (0) 6 54 31 44 10<br/>
+            E . <a href="mailto:info@autovt.nl">info@autovt.nl</a><br/>
+          </div>
+          <div class="small-12 columns hide-for-medium">
+            <a href="/" class="logo "></a>
+          </div>
       </div>
       <div class="row">
-        <div class="large-12 columns">
-          <div class="row">
-            <div class="large-4 columns rounded white box">
-              <h3>1</h3>
-            </div>
-            <div class="large-4 columns rounded lighterblue box">
-              <h3>2</h3>
-            </div>
-            <div class="large-4 columns rounded white box">
-              <h3>3</h3>
-            </div>
-          </div>
+        <div class="medium-4 columns ">
+          <h3>Welkom</h3>
+          <p>Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna.</p>
+        </div>
+        <div class="medium-4 columns ">
+          <h3>Occasions</h3>
+          <p>Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna.</p>
+        </div>
+        <div class="medium-4 columns ">
+          <h3>Onderhoud</h3>
+          <p>Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna.</p>
         </div>
       </div>
     </div>
@@ -63,73 +55,29 @@
 
 <div class="clear"></div>
 
-<div id="content">
-    <div class="row">
-      <div class="large-3 columns">
-        <div class="row">
-          <div class="large-12 rounded dark box">
-            <h3>Titel</h3>
-          </div>
-          <div class="rounded blue box">
-            <h3>Afspraak?</h3>
-            <form>
-              <input type="text" placeholder="Naam" />
-              <input type="text" placeholder="Telefoonnummer" />
-              <input type="submit" name="" value="Verzenden"
-            </form>
-          </div>
-          <div class="rounded lightblue box">
-            <h3>Contact</h3>
-            Noorderweg 9a<br/>
-            1757 PC Oudesluis<br/>
-            T . +31 (0) 224 22 34 40<br/>
-            M. +31 (0) 6 54 31 44 10<br/>
-            W. <a href="#">www.autovt.nl</a><br/>
-            E . <a href="#">info@autovt.nl</a><br/>
-          </div>
-        </div>
-      </div>
-
-      <div class="large-9 columns">
-        <h1>Paginatitel</h1>
-      </div>
-    </div>
-</div>
-
 <div id="footer">
     <div class="row">
       <div class="large-12 columns">
-        <div class="large-3 columns lighterblue box">
+        <div class="show-for-large large-4 columns lighterblue box">
           <h3>Menu</h3>
-          Tekst<br/>
-          Tekst<br/>
-          Tekst<br/>
-          Tekst<br/>
-          Tekst<br/>
+          <ul class="">
+              <li><a href="#">Occasions</a></li>
+  						<li><a href="#">Onderhoud</a></li>
+  						<li><a href="#">Financieringen</a></li>
+              <li><a href="#">Over ons</a></li>
+              <li><a href="#">Contact</a></li>
+  				</ul>
         </div>
-        <div class="large-3 columns lighterblue box">
-          <h3>Menu</h3>
-          Tekst<br/>
-          Tekst<br/>
-          Tekst<br/>
-          Tekst<br/>
-          Tekst<br/>
+        <div class="medium-6 large-4 columns lighterblue box">
+          <h3>Contact</h3>
+          Noorderweg 9a<br/>
+          1757 PC Oudesluis<br/>
+          T . +31 (0) 224 22 34 40<br/>
+          M. +31 (0) 6 54 31 44 10<br/>
+          E . <a href="mailto:info@autovt.nl">info@autovt.nl</a><br/>
         </div>
-        <div class="large-3 columns lighterblue box">
-          <h3>Menu</h3>
-          Tekst<br/>
-          Tekst<br/>
-          Tekst<br/>
-          Tekst<br/>
-          Tekst<br/>
-        </div>
-        <div class="large-3 columns lighterblue box">
-          <h3>Menu</h3>
-          Tekst<br/>
-          Tekst<br/>
-          Tekst<br/>
-          Tekst<br/>
-          Tekst<br/>
+        <div class="medium-6 large-4 columns lighterblue box">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2410.3884376164847!2d4.80931911633236!3d52.83338537987466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47cf4eec4bf2db7f%3A0x9ed97f5f99c4baa2!2sAutoservice+Van+Tongerlo!5e0!3m2!1snl!2snl!4v1517058989534" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -138,7 +86,7 @@
 <div id="textfooter">
     <div class="row">
       <div class="large-12 columns">
-          <p>Copyright &copy; 2017 Autoservice Van Tongerlo</p>
+          <p>Copyright &copy; 2018 Autoservice Van Tongerlo</p>
       </div>
     </div>
 </div>

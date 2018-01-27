@@ -121,45 +121,51 @@
   }
 }
 
-#header{
-  background: #1d1d1d;
-}
-#header .logo{
-  height: 50px;
-  width: 208px;
-  display: block;
-  background: url('../img/logo.png');
-  margin: 25px 0;
-  background-size: cover;
-}
-#menu ul{
-  li{
-    display: inline-block;
-    a{
-      color: $white;
-      display: block;
-      height: 50px;
-    }
+#header, #header .top-bar, #header .menu, #header .title-bar{
+  background-color: #1d1d1d;
+  .logo{
+    height: 50px;
+    width: 208px;
+    display: block;
+    background: url('../img/logo.png');
+    background-size: cover;
+  }
+  .icons{
+    float: right;
+    font-size: 30px;
   }
 }
+#menu .logo{
+  margin-left: 25px;
+}
+
 #header2{
-  background: #0093d0;
+  background: #1d1d1d;
   height: 100px;
   #autobar{
     #auto_header{
       background: url('../img/auto_header.png');
       background-size: contain;
       background-repeat: no-repeat;
-      background-position: right;
+      background-position: left;
       height: 290px;
       margin: 10px 0;
     }
-  }
-  #zoekbar{
-    margin-top: 50px;
+    .logo{
+      height: 50px;
+      width: 208px;
+      display: block;
+      background: url('../img/logo.png');
+      background-size: cover;
+      margin: 0 auto 60px;
+    }
   }
   @include breakpoint(medium up) {
     height: 245px;
+  }
+  @include breakpoint(medium up) {
+    height: 245px;
+    background: #0093d0;
   }
 }
 
