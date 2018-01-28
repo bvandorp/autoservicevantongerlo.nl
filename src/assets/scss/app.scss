@@ -160,6 +160,9 @@
       margin: 0 auto 60px;
     }
   }
+  a{
+    color: white;
+  }
   @include breakpoint(medium up) {
     height: 245px;
   }
@@ -169,8 +172,15 @@
   }
 }
 
+#slider{
+  background: url('http://via.placeholder.com/1200x200');
+  height: 200px;
+  background-position: center;
+}
+
 #footer{
   background: #ecf6fa;
+  margin-top: 50px;
 }
 #textfooter{
   text-align: center;

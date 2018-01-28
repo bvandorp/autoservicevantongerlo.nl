@@ -1,0 +1,21 @@
+topnav:
+  -
+    menutitle: Occasions
+    href: occasions.html
+    title: Occasions bij Autoservice van Tongerlo
+  -
+    menutitle: Onderhoud
+    href: onderhoud.html
+    title: Onderhoud van uw auto bij Autoservice van Tongerlo
+  -
+    menutitle: Financiering
+    href: financiering.html
+    title: Een financiering voor uw nieuwe auto
+  -
+    menutitle: Over ons
+    href: over_ons.html
+    title: Het verhaal van Autoservice van Tongerlo
+  -
+    menutitle: Contact
+    href: contact.html
+    title: Neem contact op met Autoservice van Tongerlo

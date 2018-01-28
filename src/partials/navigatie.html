@@ -1,0 +1,17 @@
+<div id="header">
+  <div class="title-bar" data-responsive-toggle="menu" data-hide-for="medium">
+  		<button class="menu-icon" type="button" data-toggle></button>
+      <div class="icons">
+        <a href="tel:0031654314410"><i class="fi-telephone"></i></a>
+      </div>
+  </div>
+
+  <div class="top-bar" id="menu">
+          <ul class=" medium-horizontal vertical dropdown menu" data-responsive-menu="accordion medium-dropdown">
+              <li><a href="/" class="logo hide-for-small-only"></a></li>
+              {{#each nav.topnav}}
+                <li><a href="{{this.href}}" title="{{this.title}}">{{this.menutitle}}</a></li>
+              {{/each}}
+          </ul>
+  </div>
+</div>
