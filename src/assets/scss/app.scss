@@ -127,7 +127,7 @@
     height: 50px;
     width: 208px;
     display: block;
-    background: url('../img/logo.png');
+    background: url('../img/nieuw.png');
     background-size: cover;
   }
   .icons{
@@ -141,7 +141,7 @@
 
 #header2{
   background: #1d1d1d;
-  height: 100px;
+  height: 0px;
   #autobar{
     #auto_header{
       background: url('../img/auto_header.png');
@@ -155,16 +155,13 @@
       height: 50px;
       width: 208px;
       display: block;
-      background: url('../img/logo.png');
+      background: url('../img/nieuw.png');
       background-size: cover;
       margin: 0 auto 60px;
     }
   }
   a{
     color: white;
-  }
-  @include breakpoint(medium up) {
-    height: 245px;
   }
   @include breakpoint(medium up) {
     height: 245px;
